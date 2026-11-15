@@ -1,0 +1,22 @@
+@import url("../style.css");
+:root{--accent:#78e6c5;--blue:#82b7ff}
+.hero h1{max-width:760px}
+.device{transform:rotate(1deg)}
+.windowbody .barrow span:last-child{color:#d5e4ef}
+.notice{border:1px solid #3b5a70;border-radius:14px;background:#102033;padding:18px 20px;margin:24px 0;color:#c5d6e5}
+.article ul{padding-left:22px}
+html,body{max-width:100%;overflow-x:hidden}
+.hero>*,.window,.windowbody,.mainpane{min-width:0}
+.device{width:100%;max-width:100%}
+@media(max-width:580px){
+  .navlinks a:nth-child(-n+3){display:none}
+  .navlinks{flex:0 0 auto}
+  .hero{overflow:hidden}
+  .hero h1{font-size:40px;overflow-wrap:anywhere}
+  .hero p{overflow-wrap:anywhere}
+  .device{transform:none;padding:14px}
+  .windowbody{display:block}
+  .metricrow{grid-template-columns:1fr}
+  .barrow{gap:12px;align-items:flex-start}
+  .barrow span:last-child{text-align:right}
+}
